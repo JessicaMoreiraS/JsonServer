@@ -1,5 +1,3 @@
-var urls = ['http://localhost:3000/usuarios', 'http://localhost:3000/filmes', 'http://localhost:3000/carros'];
-var jsons = []
 usuarios()
 
 function usuarios(){
@@ -27,7 +25,7 @@ function filmes(){
     document.getElementById("carros").style.display = "none";
     document.getElementById("filmes").innerHTML = "";
 
-    fetch('https://raw.githubusercontent.com/JessicaMoreiraS/JsonServer/main/db.json/filmes')
+    fetch('https://raw.githubusercontent.com/JessicaMoreiraS/JsonServer/main/db.json')
     .then(response =>{
         return response.json()
     }).then(filmes => {
