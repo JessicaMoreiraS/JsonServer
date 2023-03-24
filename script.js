@@ -13,8 +13,7 @@ function usuarios(){
         return response.json()
     }).then(usuarios => {
         console.log(usuarios);
-        console.log(usuarios.usuarios);
-        for(a=0; a<usuarios.length; a++){
+        for(a=0; a<usuarios.usuarios.length; a++){
             document.getElementById("usuarios").innerHTML += "<div><p>ID: "+usuarios.usuarios[a].id +"</p><p>Nome: "+ usuarios.usuarios[a].nome +"</p><p>Email: "+ usuarios.usuarios[a].email +"</p><p>Senha:"+ usuarios.usuarios[a].senha+"</p></div>";
         }
     })
@@ -33,8 +32,8 @@ function filmes(){
         return response.json()
     }).then(filmes => {
         console.log(filmes);
-        for(a=0; a<filmes.length; a++){
-            document.getElementById("filmes").innerHTML += "<div><p>Titulo: "+ filmes[a].titulo+"</p><p>Descrição: "+ filmes[a].descricao +"</p><p>Avaliação: "+ filmes[a].avaliacao +"</p></div>"
+        for(a=0; a<filmes.filmes.length; a++){
+            document.getElementById("filmes").innerHTML += "<div><p>Titulo: "+ filmes.filmes[a].titulo+"</p><p>Descrição: "+ filmes.filmes[a].descricao +"</p><p>Avaliação: "+ filmes.filmes[a].avaliacao +"</p></div>"
         }
     })
 
@@ -47,13 +46,13 @@ function carros(){
     document.getElementById("carros").style.display = "flex";
     document.getElementById("carros").innerHTML ="";
 
-    fetch('https://raw.githubusercontent.com/JessicaMoreiraS/JsonServer/main/db.json/carros')
+    fetch('https://raw.githubusercontent.com/JessicaMoreiraS/JsonServer/main/db.json')
     .then(response =>{
         return response.json()
     }).then(carros => {
         console.log(carros);
-        for(a=0; a<carros.length; a++){
-            document.getElementById("carros").innerHTML += "<div><p>Marca: "+ carros[a].nome +"</p><p>Modelo: "+ carros[a].modelo +"</p><p>Ano: "+ carros[a].ano +"</p></div>"
+        for(a=0; a<carros.carros.length; a++){
+            document.getElementById("carros").innerHTML += "<div><p>Marca: "+ carros.carros[a].nome +"</p><p>Modelo: "+ carros.carros[a].modelo +"</p><p>Ano: "+ carros.carros[a].ano +"</p></div>"
         }
     })
 
