@@ -8,7 +8,7 @@ function usuarios(){
     document.getElementById("carros").style.display = "none";
     document.getElementById("usuarios").innerHTML ="";
 
-    fetch('https://github.com/JessicaMoreiraS/JsonServer/blob/main/db.json/usuarios')
+    fetch('https://github.com/JessicaMoreiraS/JsonServer/blob/main/db.json')
     .then(response =>{
         return response.json()
     }).then(usuarios => {
