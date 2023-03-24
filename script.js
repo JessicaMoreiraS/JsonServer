@@ -13,6 +13,7 @@ function usuarios(){
         return response.json()
     }).then(usuarios => {
         console.log(usuarios);
+        console.log(usuarios.usuarios);
         for(a=0; a<usuarios.length; a++){
             document.getElementById("usuarios").innerHTML += "<div><p>ID: "+usuarios.usuarios[a].id +"</p><p>Nome: "+ usuarios.usuarios[a].nome +"</p><p>Email: "+ usuarios.usuarios[a].email +"</p><p>Senha:"+ usuarios.usuarios[a].senha+"</p></div>";
         }
