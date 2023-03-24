@@ -8,7 +8,7 @@ function usuarios(){
     document.getElementById("carros").style.display = "none";
     document.getElementById("usuarios").innerHTML ="";
 
-    fetch('https://raw.githubusercontent.com/JessicaMoreiraS/JsonServer/blob/main/db.json')
+    fetch('https://raw.githubusercontent.com/JessicaMoreiraS/JsonServer/main/db.json')
     .then(response =>{
         return response.json()
     }).then(usuarios => {
@@ -27,7 +27,7 @@ function filmes(){
     document.getElementById("carros").style.display = "none";
     document.getElementById("filmes").innerHTML = "";
 
-    fetch('https://raw.githubusercontent.com/JessicaMoreiraS/JsonServer/blob/main/db.json')
+    fetch('https://raw.githubusercontent.com/JessicaMoreiraS/JsonServer/main/db.json')
     .then(response =>{
         return response.json()
     }).then(filmes => {
@@ -46,7 +46,7 @@ function carros(){
     document.getElementById("carros").style.display = "flex";
     document.getElementById("carros").innerHTML ="";
 
-    fetch('https://raw.githubusercontent.com/JessicaMoreiraS/JsonServer/blob/main/db.json')
+    fetch('https://raw.githubusercontent.com/JessicaMoreiraS/JsonServer/main/db.json')
     .then(response =>{
         return response.json()
     }).then(carros => {
