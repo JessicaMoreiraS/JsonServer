@@ -27,7 +27,7 @@ function filmes(){
     document.getElementById("carros").style.display = "none";
     document.getElementById("filmes").innerHTML = "";
 
-    fetch('https://raw.githubusercontent.com/JessicaMoreiraS/JsonServer/main/db.json')
+    fetch('https://raw.githubusercontent.com/JessicaMoreiraS/JsonServer/main/db.json/filmes')
     .then(response =>{
         return response.json()
     }).then(filmes => {
