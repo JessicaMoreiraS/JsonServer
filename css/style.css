@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+}
+
+header, 
+main,
+#usuarios,
+#filmes,
+#carros{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header{
+    background-color: yellow;
+    min-height: 10vh;
+    flex-direction: column;
+}
+header nav{
+    background-color: whitesmoke;
+    width: 100%;
+    padding: 1vh;
+}
+header nav a{
+    text-decoration: none;
+    color: blueviolet;
+    font-weight: 600;
+    margin-left: 5%;
+}
+header nav a:hover{
+    color: yellow;
+    text-shadow: 
+    -1px -1px 0px blueviolet, 
+    -1px 1px 0px blueviolet,      
+     1px -1px 0px blueviolet,    
+     1px 0px 0px blueviolet;
+}
+
+main{
+    background-color: blueviolet;
+    flex-direction: column;
+    min-height: 90vh;
+}
+
+#usuarios,
+#filmes,
+#carros{
+    border: 3px double black;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    width: 60%;
+    min-width: 300px;
+    flex-wrap: wrap
+}
+
+#usuarios div,
+#filmes div,
+#carros div{
+    width: 33%;
+    min-width: 200px;
+    border: 1px dashed darkgray;
+    min-height: 250px;
+}
+#usuarios p,
+#filmes p,
+#carros p{
+    text-align: center;
+    margin: 5%;
+}
+
+#icone{
+    width: 250px;
+}
+#icone img{
+    width: 90%;
+}

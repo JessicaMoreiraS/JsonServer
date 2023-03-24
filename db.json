@@ -1,0 +1,56 @@
+{
+    "usuarios": [
+        {
+            "id": 987001,
+            "nome": "Rosa",
+            "email": "resaflor@gmail.com",
+            "senha": "florFlorido"
+        },
+        {
+            "id": 987002,
+            "nome": "Marcia",
+            "email": "marcia@gmail.com",
+            "senha": "frutasDoces123"
+        },
+        {
+            "id": 987003,
+            "nome": "Lucas",
+            "email": "lucasfilmes@gmail.com",
+            "senha": "starFilme321"
+        }
+    ],
+    "filmes":[
+        {
+            "titulo": "Paddington",
+            "descricao": "Resgatado de uma estaçãode trem, Paddington encontra refúgio na casa de uma família de Londres - até que uma taxidermista decide adicioná-lo à sua coleção",
+            "avaliacao": 4
+        },
+        {
+            "titulo": "As aventuras de Sharkboy e Lavagirl",
+            "descricao": "Os amigos imaginários de Max, Sharkboy e Lavagirl, ganham vida e o ajudam a lutar contra o mal",
+            "avaliacao": 5
+        },
+        {
+            "titulo": "Johnny Test",
+            "descricao": "Johnny Teste e seu cão falante embarcan em aventuras turbinadas para salvar o mundo de desastres. Ele também conta com a ajuda de suas engenhosas irmãs, que sempre têm alguma invenção maluca na manga",
+            "avaliacao": 3   
+        }
+    ],
+    "carros":[
+        {
+            "nome": "Chevrolet",
+            "modelo": "Corsa",
+            "ano": "2012"
+        },
+        {
+            "nome": "Mustang",
+            "modelo": "coupe",
+            "ano": "2023"
+        },
+        {
+            "nome": "Renout",
+            "modelo": "Captur",
+            "ano": "2016"
+        }
+    ]
+}
