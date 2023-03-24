@@ -21,9 +21,6 @@ function usuarios(){
     document.getElementById("icone").innerHTML = '<img src="imagens/usuarios.png"/>'
 }
 
-
-carregarPag()
-
 function filmes(){
     document.getElementById("usuarios").style.display = "none";
     document.getElementById("filmes").style.display = "flex";
