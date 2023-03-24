@@ -46,7 +46,7 @@ function carros(){
     document.getElementById("carros").style.display = "flex";
     document.getElementById("carros").innerHTML ="";
 
-    fetch('https://raw.githubusercontent.com/JessicaMoreiraS/JsonServer/main/db.json')
+    fetch('https://raw.githubusercontent.com/JessicaMoreiraS/JsonServer/main/db.json/carros')
     .then(response =>{
         return response.json()
     }).then(carros => {
